@@ -57,11 +57,10 @@ public class UserController {
             user.setPassword(password);
             userService.insertUsernameAndPassword(user);
 
-            return "../login";
+            return "login";
         }else{
             System.out.println("注册失败");
-            request.setAttribute("fail","注册");
-            return "fail";
+            return "register";
         }
     }
 
