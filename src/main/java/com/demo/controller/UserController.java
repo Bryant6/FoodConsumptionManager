@@ -2,7 +2,6 @@ package com.demo.controller;
 
 import com.demo.domain.User;
 import com.demo.service.UserService;
-import com.sun.deploy.net.HttpResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
