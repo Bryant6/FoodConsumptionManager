@@ -26,7 +26,7 @@
 <div id="sidebar">
     <div class="sidebar-inner">
         <ul id="sideNav" class="nav nav-pills nav-stacked">
-            <li><a href="index.html"> 个人信息 </a></li>
+            <li><a href="/manage/userList"> 用户列表 </a></li>
             <li><a href="#"> 道具商城 </a></li>
             <li><a href="#"> 论坛</a></li>
             <li><a href="#"> 新闻资讯 </a></li>

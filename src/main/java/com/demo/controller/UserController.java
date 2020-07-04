@@ -54,6 +54,7 @@ public class UserController {
             User user = new User();
             user.setUsername(username);
             user.setPassword(password);
+            user.setIsManager(0);
             userService.insertUsernameAndPassword(user);
 
             return "login";
@@ -70,11 +71,16 @@ public class UserController {
 
         System.out.println("login:"+username+"+"+password);
 
-        if(userService.selectUsernameAndPassword(username,password) == null){
+        User user = userService.selectUsernameAndPassword(username,password);
+        if(user == null){
             request.setAttribute("fail","登录");
             return "fail";
         }else{
-            return "homePage";
+            if(user.getIsManager()==1)
+                return "homePage";
+            else {
+                return "usualHome";
+            }
         }
     }
 }

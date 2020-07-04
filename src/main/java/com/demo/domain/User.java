@@ -6,14 +6,24 @@ public class User implements Serializable {
     private Integer id;
     private String username;
     private String password;
+    private Integer isManager;
 
     public User() {
     }
 
-    public User(Integer id, String username, String password) {
+    public User(Integer id, String username, String password,Integer isManager) {
         this.id = id;
         this.username = username;
         this.password = password;
+        this.isManager = isManager;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getUsername() {
@@ -30,6 +40,14 @@ public class User implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Integer getIsManager() {
+        return isManager;
+    }
+
+    public void setIsManager(Integer isManager) {
+        this.isManager = isManager;
     }
 
     @Override

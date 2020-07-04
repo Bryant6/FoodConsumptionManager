@@ -12,10 +12,10 @@ public interface UserMapper {
     @Select(value = "select * from user")
     public List<User> findAll();
 
-    @Insert(value = "insert into user(username,password) values(#{username},#{password})")
+    @Insert(value = "insert into user(username,password,isManager) values(#{username},#{password},#{isManager})")
     void save(User user);
 
-    @Insert(value = "insert into user(username,password) values(#{username},#{password})")
+    @Insert(value = "insert into user(username,password,isManager) values(#{username},#{password},#{isManager})")
     public void insertUsernameAndPassword(User user);
 
     @Select(value = "select * from user where username = #{username} and password = #{password}")
