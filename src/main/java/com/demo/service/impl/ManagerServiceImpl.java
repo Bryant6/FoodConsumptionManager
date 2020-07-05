@@ -27,4 +27,9 @@ public class ManagerServiceImpl implements ManagerService {
     public User selectUserById(int id) {
         return managerMapper.selectUserById(id);
     }
+
+    @Override
+    public void updateUser(String username, String password, int id) {
+        managerMapper.updateUser(username,password,id);
+    }
 }

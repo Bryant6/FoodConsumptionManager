@@ -11,4 +11,6 @@ public interface ManagerService {
     public void DeleteUser(int id);
 
     User selectUserById(int id);
+
+    public void updateUser(String username,String password,int id);
 }

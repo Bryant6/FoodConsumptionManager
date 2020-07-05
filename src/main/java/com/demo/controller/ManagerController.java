@@ -35,7 +35,7 @@ public class ManagerController {
 
         if(method.equals("delete")){
             managerService.DeleteUser(id);
-            return "userList";
+            return "homePage";
         }
         if(method.equals("update")){
             User user = managerService.selectUserById(id);
@@ -43,6 +43,26 @@ public class ManagerController {
             req.setAttribute("id",id);
             System.out.println(id + " +" + user);
             return "updateUser";
+        }else{
+            req.setAttribute("fail","修改失败");
+            return "fail";
         }
+    }
+
+    @RequestMapping("/upUser")
+    public String upUser(HttpServletRequest req){
+        int id = Integer.parseInt(req.getParameter("id"));
+        String username = req.getParameter("username");
+        String password = req.getParameter("password");
+        System.out.println("待修改："+id+username+password);
+
+        managerService.updateUser(username,password,id);
+        return "homePage";
+    }
+
+    @RequestMapping("/selectAllCanteen")
+    public String canteenList(){
+
+        return "canteenList";
     }
 }

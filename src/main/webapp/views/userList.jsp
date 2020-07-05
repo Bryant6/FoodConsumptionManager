@@ -29,8 +29,8 @@
                 <td>${user.username}</td>
                 <td>${user.password}</td>
                 <td>
-                    <a href="<c:url value='/manage/updateUser?method=update&id=${meeting.id}'/> ">修改</a>
-                    <a href="<c:url value='/manage/updateUser?method=delete&id=${meeting.id}'/> ">删除</a>
+                    <a href="<c:url value='/manage/updateUser?method=update&id=${user.id}'/> ">修改</a>
+                    <a href="<c:url value='/manage/updateUser?method=delete&id=${user.id}'/> ">删除</a>
                 </td>
             </tr>
         </c:forEach>
