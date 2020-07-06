@@ -2,10 +2,17 @@ package com.demo.domain;
 
 import java.io.Serializable;
 
+/**
+ * 用户实体类
+ */
 public class User implements Serializable {
+    //用户id
     private Integer id;
+    //用户名
     private String username;
+    //密码
     private String password;
+    //是否是管理员
     private Integer isManager;
 
     public User() {
