@@ -28,7 +28,7 @@
         <ul id="sideNav" class="nav nav-pills nav-stacked">
             <li><a href="/manage/userList"> 用户列表 </a></li>
             <li><a href="/canteen/canteenList"> 食堂管理 </a></li>
-            <li><a href="#"> 菜品管理</a></li>
+            <li><a href="/food/foodList"> 菜品管理</a></li>
             <li><a href="#"> 其他</a></li>
         </ul>
     </div>
