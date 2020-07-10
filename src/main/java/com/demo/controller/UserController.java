@@ -10,6 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
@@ -70,6 +71,9 @@ public class UserController {
         String password = request.getParameter("password");
 
         System.out.println("login:"+username+"+"+password);
+        HttpSession session = request.getSession();
+        session.setAttribute("count",0);
+        session.setAttribute("paySum",0);
 
         User user = userService.selectUsernameAndPassword(username,password);
         if(user == null){
@@ -79,7 +83,7 @@ public class UserController {
             if(user.getIsManager()==1)
                 return "homePage";
             else {
-                return "usualHome";
+                return "userHome";
             }
         }
     }

@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>食品消费管理系统</title>
+    <title>用户主页</title>
     <link rel='stylesheet' type='text/css'
     <link href="../assets/css/icons.css" rel="stylesheet" />
     <link href="../assets/css/sprflat-theme/jquery.ui.all.css" rel="stylesheet" />
@@ -26,9 +26,8 @@
 <div id="sidebar">
     <div class="sidebar-inner">
         <ul id="sideNav" class="nav nav-pills nav-stacked">
-            <li><a href="/manage/userList"> 用户列表 </a></li>
-            <li><a href="/canteen/canteenList"> 食堂管理 </a></li>
-            <li><a href="/food/foodList"> 菜品管理</a></li>
+            <li><a href="/orderFood"> 点菜系统 </a></li>
+            <li><a href="/canteenInfo"> 食堂信息 </a></li>
             <li><a href="${pageContext.request.contextPath}/views/other.jsp"> 其他</a></li>
         </ul>
     </div>
