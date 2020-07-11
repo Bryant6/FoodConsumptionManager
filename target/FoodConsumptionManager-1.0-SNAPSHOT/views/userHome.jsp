@@ -5,6 +5,8 @@
   Time: 14:39
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page isELIgnored="false"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -38,14 +40,14 @@
     <h2>学号：3120170901503</h2>
 </div>
 <div id="content">
-    <h3 class="page-header">系统概述：通过对学生在学校餐厅的消费流程进行分析，完成具有菜单管理、点菜管理、食品管理、客户消费管理、按日（按月）结算、员工管理、餐厅管理等相关功能的小型数据库管理应用系统。
-        <p/>设计要求 ：
-        1)完成进人员、餐厅、食品价目表的维护
-        2)完成消费表的生成，并计算消费折扣。
-        3)按人员、时间、餐厅统计计算消费总额
-        4)按食品类别、时间、餐厅统计计算消费总额
-        5)完成用户管理功能
-        6)完成数据备份与恢复功能</h3>
+    <h3 class="page-header">系统概述：通过对学生在学校餐厅的消费流程进行分析，完成具有菜单管理、点菜管理、食品管理餐厅管理等相关功能的小型数据库管理应用系统。
+        <p/><br>
+        设计要求 ：<br>
+        1)完成进人员、餐厅、食品价目表的维护<br>
+        2)菜单信息的查询（包含模糊查询）。<br>
+        3)按所点菜品计算消费总额<br>
+        4)完成用户管理功能<br>
+        5)完成数据备份与恢复功能</h3>
 </div>
 
 </body>
